@@ -1,0 +1,30 @@
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: white;
+    border-radius: 3px; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 3px; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: slategray; 
+}
+
+input.placeholder{
+	text-align: center;
+}
+
+.error{
+			color: red;
+			text-align: center;
+}
