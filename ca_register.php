@@ -23,7 +23,7 @@
 
       <div class="card-body px-lg-5 pt-0">
 
-      <?php include('validate.php'); ?>
+      <?php include('ca_validate.php'); ?>
 
         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" id="myForm" name="myForm">
             <div class="md-form">

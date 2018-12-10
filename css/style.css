@@ -26,5 +26,8 @@ input.placeholder{
 
 .error{
 			color: red;
-			text-align: center;
+}
+
+.table{
+	color: white;
 }
