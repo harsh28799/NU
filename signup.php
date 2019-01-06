@@ -81,6 +81,10 @@ iframe:hover{
             </div>
 
             <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" onclick="validateForm();" ><strong>Submit</strong></button>
+            <tr>
+                <td>Already a member?</td>
+                <td><a href="signin.php">signIn</a></td>
+            </tr>
         </form>
     </div>
 </div>
