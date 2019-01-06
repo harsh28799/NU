@@ -16,10 +16,10 @@
 	
 	<?php include('upload.php'); ?>
 	
-	<h1>REGISTER HERE:</h1>
+	<h1>EVENT REGISTRATION FORM:</h1>
 	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" enctype="multipart/form-data">
 		<fieldset>
-		<legend><strong>SIGN UP:</strong></legend>
+		<legend><strong>FILL IN DETAILS:</strong></legend>
 		<table>
 			<tr>
 				<td>Category:</td>
