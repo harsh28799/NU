@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jan 06, 2019 at 05:03 PM
+-- Generation Time: Jan 06, 2019 at 05:25 PM
 -- Server version: 5.7.19
 -- PHP Version: 5.6.31
 
@@ -43,18 +43,14 @@ CREATE TABLE IF NOT EXISTS `event` (
   `criteria` varchar(1000) NOT NULL,
   `image` varchar(200) NOT NULL,
   PRIMARY KEY (`sno`)
-) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `event`
 --
 
 INSERT INTO `event` (`sno`, `category`, `name`, `venue`, `coordinator1`, `coordinator2`, `number1`, `number2`, `description`, `rules`, `criteria`, `image`) VALUES
-(5, 'proshows', 'ljkjghgfd', 'la', 'harsh mohan', 'ashish', '8895126561', '7979988589', 'thqwertyuioplkjhgfdsazxcvbnmmnbvcxzasdfghjklpoiuytrewqasdfghjmnbvcxzasdfgh', 'glitgscvqwefgbxrtyujmnbvcyuik', 'jrgrdrtfyguhijo', '_20180712_012531.jpg'),
-(4, 'musical night', 'harsh mohan', 'bba', 'harsh mohan', 'harsh mohan', '8895126561', '', '', '', '', 'IMG-20180106-WA0006.jpg'),
-(3, 'competition', 'harsh mohan', 'bba', 'harsh mohan', '', '8895126561', '', '', '', '', ''),
-(6, 'proshows', 'harsh mohan', 'la', 'harsh mohan', 'harsh mohan', '8895126561', '', '', '', '', 'IMG-20180507-WA0019.jpg'),
-(7, 'workshop', 'asd', 'sd', 'df', '', 'dfg', '', '', '', '', '_20180723_194020.jpg');
+(9, 'fun', 'paint ball', 'NCC ground', 'harsh mohan', 'harsh mohan', '8895126561', '7979988589', 'Too much fun', 'Till you die', 'Living is surviving', 'IMG-20180723-WA0007.jpg');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

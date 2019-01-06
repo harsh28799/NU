@@ -8,7 +8,7 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST")
 {
   			if (empty($_POST["category"])) { $categoryErr = "Category is required";  }
-  			else{	$name = test($_POST["category"]);	}
+  			else{	$category = test($_POST["category"]);	}
   			
   			if (empty($_POST["name"])) { $nameErr = "Name is required";  }
   			else{	$name = test($_POST["name"]);	}	
