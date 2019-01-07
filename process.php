@@ -28,11 +28,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
   			if(empty($_POST["code1"]))	{	$code1Err="password required";	}
   			else if (!preg_match("/^(?=.*\d)(?=.*[A-Za-z])[0-9A-Za-z!@#$%]{8,12}$/", $_POST["code1"]))	{	$code1Err= "Password requirements not met";	}
-  			else{	$code1=$_POST["code1"];		}
+  			else{	$code1=md5($_POST["code1"]);		}
 
   			if(empty($_POST["code2"]))	{	$code2Err="reentering password required";	}
   			else if (!preg_match("/^(?=.*\d)(?=.*[A-Za-z])[0-9A-Za-z!@#$%]{8,12}$/", $_POST["code2"]))	{	$code2Err= "Password requirements not met";	}
-  			else{	$code2=$_POST["code2"];		}
+  			else{	$code2=md5($_POST["code2"]);		}
 
   			if($code1!=$code2){		$code1Err="The two passwords do not match";
   									$code2Err="The two passwords do not match";  }

@@ -63,7 +63,7 @@ iframe:hover{
             </div>
 
             <div class="md-form">
-                <input type="text" id="institute" name="college" class="form-control form-input" style="align-content: center;" value="<?php echo $institute ?>">
+                <input type="text" id="institute" name="institute" class="form-control form-input" style="align-content: center;" value="<?php echo $institute ?>">
                 <label for="institute">Institute</label>
                 <span class="error"><?php echo $instituteErr; ?></span>
             </div>
