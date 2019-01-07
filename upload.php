@@ -14,10 +14,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
   			else{	$name = test($_POST["name"]);	}	
 
   			if (empty($_POST["date"])) { $dateErr = "Date is required";  }
-  			else{	$date = test($_POST["date"]);	}	
+  			else{	$date = $_POST["date"];}	
 
   			if (empty($_POST["time"])) { $timeErr = "Time is required";  }
-  			else{	$time = test($_POST["time"]);	}	
+  			else{	$time = $_POST["time"];}	
 
 			if (empty($_POST["venue"])) { $venueErr = "Venue is required";  }
   			else{	$venue = test($_POST["venue"]);	}	
@@ -48,8 +48,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
   		if($categoryErr==""&&$nameErr==""&&$venueErr==""&&$coordinatorErr==""&&$numberErr==""&&$imageErr=="")
   		{
 	
-   			if($conn->query("INSERT INTO event (category, name, venue, coordinator1, coordinator2, number1, number2, description, rules, criteria, image)
-    			VALUES ('$category','$name', '$venue', '$coordinator1' , '$coordinator2' , '$number1', '$number2', '$description', '$rules', '$criteria', '$imagepath')"))
+   			if($conn->query("INSERT INTO event (category, name, date, time, venue, coordinator1, coordinator2, number1, number2, description, rules, criteria, image)
+    			VALUES ('$category','$name', '$date', '$time', '$venue', '$coordinator1' , '$coordinator2' , '$number1', '$number2', '$description', '$rules', '$criteria', '$imagepath')"))
 
     			echo "Inserted";
 

@@ -40,6 +40,16 @@
 				<td><span class="error">*<?php echo $nameErr; ?></span></td>
 			</tr>
 			<tr>
+				<td>Date:</td>
+				<td><input type="date" name="date" value="<?php echo $date ?>"></td>
+				<td><span class="error">*<?php echo $dateErr; ?></span></td>
+			</tr>
+			<tr>
+				<td>Time:</td>
+				<td><input type="time" name="time" value="<?php echo $time ?>"></td>
+				<td><span class="error">*<?php echo $timeErr; ?></span></td>
+			</tr>
+			<tr>
 				<td>Venue:</td>
 				<td><input type="text" name="venue" value="<?php echo $venue ?>"></td>
 				<td><span class="error">*<?php echo $venueErr; ?></span></td>
